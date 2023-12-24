@@ -7,14 +7,14 @@ Dockerfile for the creation of a GitHub Actions runner image to be deployed dyna
 
 Credit to [testdriven.io](https://testdriven.io/blog/github-actions-docker/) for the original start.sh script, which I slightly modified to make it work with a regular repository rather than with an enterprise. 
 
-# Build
+## Build
 ```shell
 docker buildx create --name multi --driver=docker-container 
 ```
 ```shell
 docker buildx build --load --builder=multi --platform=linux/arm64 -t github-runner .
 ```
-# Run
+## Run
 replace
 - **[YOUR-ORG]** with your org name
 - **[TOKEN]** with Personal Access Token with `repo`, `workflow`, and `admin:org` scopes.
