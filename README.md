@@ -19,5 +19,5 @@ replace
 - **[YOUR-ORG]** with your org name
 - **[TOKEN]** with Personal Access Token with `repo`, `workflow`, and `admin:org` scopes.
 ```shell
-docker run -e "ORG=[YOUR-ORG]" -e "REPO=pzh-shop-api" -e "TOKEN=[TOKEN]" github-runner
+docker run -e "ORG=[YOUR-ORG]" -e "TOKEN=[TOKEN]" github-runner
 ```
