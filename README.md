@@ -1,6 +1,6 @@
 # github-runner-dockerfile
 ## Fork reason
-This repo is dedicated to support github-runners for organizations and supports other platform builds (e.g. arm64). It includes also docker CLI and AWS CLI. To use host docker daemon change **DOCKER_GROUP_ID** arg in dockerfile to match with host docker group id.
+This repo is dedicated to support github-runners for organizations and supports other platform builds (e.g. arm64). It includes also maven, docker CLI and AWS CLI. To use host docker daemon change **DOCKER_GROUP_ID** arg in dockerfile to match with host docker group id.
 
 ## Description
 Dockerfile for the creation of a GitHub Actions runner image to be deployed dynamically. [Find the full explanation and tutorial here](https://baccini-al.medium.com/creating-a-dockerfile-for-dynamically-creating-github-actions-self-hosted-runners-5994cc08b9fb).
